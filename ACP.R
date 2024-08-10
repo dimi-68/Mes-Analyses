@@ -82,3 +82,14 @@ p4 <- p4 + annotate("text", x = Inf, y = Inf, label = paste("p-value:", round(sh
               hjust = 1.1, vjust = 2, size = 4, color = "black")
 
 grid.arrange(p1, p2, p3,p4, ncol = 2)
+
+## Species
+
+ggplot(iris) +
+  aes(x = Species) +
+  geom_bar(fill = "#112446") +
+  theme_minimal()
+
+## Analyse Bivariee
+
+
